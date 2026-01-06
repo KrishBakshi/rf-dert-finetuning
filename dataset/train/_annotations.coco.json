@@ -98268,6 +98268,11 @@
   ],
   "categories": [
     {
+      "id": 0,
+      "name": "background",
+      "supercategory": "background"
+    },
+    {
       "id": 1,
       "name": "room",
       "supercategory": "room"

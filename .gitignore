@@ -8,3 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
+
+output/
+cropped_entities/
+predictions/
+predictions_seg/
+cropped_entities.zip
+
+.DS_Store

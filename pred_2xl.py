@@ -6,7 +6,7 @@ import matplotlib.patches as patches
 from matplotlib.colors import ListedColormap
 from PIL import Image
 import numpy as np
-from rfdetr import RFDETRSegPreview
+from rfdetr import RFDETRSeg2XLarge
 
 def visualize_predictions(image_path, detections, output_path, class_names=None, show_masks=True, mask_only=False, instance_segmentation=True):
     """
@@ -292,16 +292,10 @@ def predict_and_visualize(
 if __name__ == "__main__":
     # Load model with correct configuration (using RFDETRSegPreview for segmentation)
     print("Loading model...")
-    model = RFDETRSegPreview(
+    model = RFDETRSeg2XLarge(
         pretrain_weights="./output/checkpoint.pth",
-        image_size=1280,
-        patch_size=12,
-        num_queries=200,
-        group_detr=13,
-        resolution=432,
-        positional_encoding_size=36,
-        num_windows=2,
-        square_resize_div_64=True
+        image_size=1272,
+        device="cuda"
     )
     print("Model loaded successfully!\n")
     

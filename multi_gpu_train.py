@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
     model.train(
         dataset_dir="./dataset/",
-        epochs=100,
+        epochs=50,
         batch_size=16,
         grad_accum_steps=1,
         lr=1e-4,
@@ -14,7 +14,8 @@ if __name__ == "__main__":
         tensorboard=True,
         resolution=1272,
         early_stopping=True,
-        early_stopping_patience=10,
+        early_stopping_patience=5,
         early_stopping_min_delta=0.005,
+        strategy='ddp_find_unused_parameters_true'
         # resume= "./output/checkpoint.pth"
     )

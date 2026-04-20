@@ -15,4 +15,4 @@ predictions/
 predictions_seg/
 cropped_entities.zip
 
-.DS_Store
+*.DS_Store

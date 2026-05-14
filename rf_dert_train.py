@@ -10,6 +10,7 @@ if __name__ == "__main__":
         lr=1e-4,
         output_dir="./output/",
         device="cuda",
+        patch_size=14,
         tensorboard=True,
         resolution=1272,
         early_stopping=True,

@@ -1,0 +1,5 @@
+rfdetr==1.6.0
+pycocotools
+pytorch_lightning
+faster-coco-eval
+tensorboardX
